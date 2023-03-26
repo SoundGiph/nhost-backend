@@ -7,24 +7,6 @@
     - POST
   name: InsertVozo
   url: insertVozo
-- comment: Endpoint to search vozo
-  definition:
-    query:
-      collection_name: allowed-queries
-      query_name: searchVozos
-  methods:
-    - POST
-  name: searchVozos
-  url: searchVozos
-- comment: Endpoint to search Vozos from a specific category
-  definition:
-    query:
-      collection_name: allowed-queries
-      query_name: searchVozosWithCategory
-  methods:
-    - POST
-  name: searchVozosWithCategory
-  url: searchVozosWithCategory
 - comment: Endpoint to get all vozos from  database
   definition:
     query:

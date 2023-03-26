@@ -26,27 +26,3 @@
               id
             }
           }
-      - name: searchVozos
-        query: |
-          query searchVozos ($fulltext: String!) {
-            search_vozos(args: {search:$fulltext}) {
-              id
-              title
-              categories
-              reactions
-              description
-              tags
-            }
-          }
-      - name: searchVozosWithCategory
-        query: |
-          query searchVozosWithCategory ($fulltext: String!, $category: String!) {
-            search_vozos(args: {search:$fulltext}, where: {categories:{_ilike:$category}}) {
-              id
-              title
-              categories
-              reactions
-              description
-              tags
-            }
-          }
