@@ -1,0 +1,53 @@
+table:
+  name: vozos
+  schema: public
+insert_permissions:
+  - role: public
+    permission:
+      check: {}
+      columns:
+        - audio_url
+        - categories
+        - description
+        - image_url
+        - title
+        - shared_count
+        - version
+        - reactions
+        - tags
+        - created_at
+        - updated_at
+        - id
+select_permissions:
+  - role: anonymous
+    permission:
+      columns:
+        - audio_url
+        - categories
+        - description
+        - image_url
+        - title
+        - shared_count
+        - version
+        - reactions
+        - tags
+        - created_at
+        - updated_at
+        - id
+      filter: {}
+  - role: public
+    permission:
+      columns:
+        - audio_url
+        - categories
+        - description
+        - image_url
+        - title
+        - shared_count
+        - version
+        - reactions
+        - tags
+        - created_at
+        - updated_at
+        - id
+      filter: {}

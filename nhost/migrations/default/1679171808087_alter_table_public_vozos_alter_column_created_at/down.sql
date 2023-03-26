@@ -1,0 +1,1 @@
+ALTER TABLE public.vozos ALTER COLUMN created_at DROP DEFAULT;

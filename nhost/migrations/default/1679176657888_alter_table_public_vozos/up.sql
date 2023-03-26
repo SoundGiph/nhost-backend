@@ -1,0 +1,2 @@
+ALTER TABLE public.vozos ALTER COLUMN version DROP NOT NULL;
+ALTER TABLE public.vozos ALTER COLUMN shared_count DROP NOT NULL;

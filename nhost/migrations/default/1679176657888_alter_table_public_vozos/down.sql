@@ -1,0 +1,4 @@
+-- Could not auto-generate a down migration
+-- Please write an appropriate down migration for the SQL below:
+-- ALTER TABLE public.vozos ALTER COLUMN version DROP NOT NULL;
+-- ALTER TABLE public.vozos ALTER COLUMN shared_count DROP NOT NULL;

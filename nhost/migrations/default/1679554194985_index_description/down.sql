@@ -1,0 +1,4 @@
+-- Could not auto-generate a down migration.
+-- Please write an appropriate down migration for the SQL below:
+-- CREATE INDEX vozo_description_gin_idx ON vozos
+-- USING GIN ((description) gin_trgm_ops);

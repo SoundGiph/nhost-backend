@@ -1,0 +1,28 @@
+- name: allowed-queries
+  definition:
+    queries:
+      - name: InsertVozo
+        query: |
+          mutation insertVozo ($id: uuid, $audio_url: String, $image_url: String, $categories: String, $title: String, $description: String, $reactions: String, $tags: String) {
+            insert_vozos_one(object: {id:$id,audio_url:$audio_url,image_url:$image_url,categories:$categories,title:$title,description:$description,reactions:$reactions,tags:$tags}) {
+              id
+            }
+          }
+      - name: AllVozos
+        query: |
+          query GetVozos {
+            vozos {
+              audio_url
+              categories
+              description
+              image_url
+              title
+              shared_count
+              version
+              reactions
+              tags
+              created_at
+              updated_at
+              id
+            }
+          }

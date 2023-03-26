@@ -1,0 +1,18 @@
+- comment: This endpoint is used to create a new Vozo
+  definition:
+    query:
+      collection_name: allowed-queries
+      query_name: InsertVozo
+  methods:
+    - POST
+  name: InsertVozo
+  url: insertVozo
+- comment: Endpoint to get all vozos from  database
+  definition:
+    query:
+      collection_name: allowed-queries
+      query_name: AllVozos
+  methods:
+    - GET
+  name: AllVozos
+  url: vozos

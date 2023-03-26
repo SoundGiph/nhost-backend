@@ -1,0 +1,1 @@
+CREATE TABLE public.vozos (id uuid NOT NULL, created_at timestamp NOT NULL, updated_at timestamp NOT NULL, version int4 NOT NULL, description varchar NOT NULL, title varchar NOT NULL, audio_url varchar NOT NULL, image_url varchar NOT NULL, shared_count int4 NOT NULL, tags text NOT NULL, reactions text NOT NULL, categories varchar NOT NULL, PRIMARY KEY (id));
